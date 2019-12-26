@@ -11,4 +11,5 @@ public interface ITool
     void InitOnce();
     void Use(Transform player);
     void SwitchMode(int oldMode, int newMode);
+    void Update();
 }

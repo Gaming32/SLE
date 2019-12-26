@@ -35,4 +35,5 @@ public class OrbitTool : ITool
     }
 
     public void SwitchMode(int oldMode, int newMode) { }
+    public void Update() { }
 }

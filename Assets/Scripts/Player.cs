@@ -36,6 +36,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        tool.Update();
+
         if (!orbit)
         {
             int tmpmode = mode;
@@ -45,6 +47,7 @@ public class Player : MonoBehaviour
             bool modeChanged = mode != tmpmode;
             if (modeChanged) modeText.text = mode.ToString();
             if (modeChanged) tool = modes[mode];
+            tool.SwitchMode(tmpmode, mode);
 
             if (Input.GetButtonDown(options.toggleVerticalLockButton)) verticalLocked = !verticalLocked;
         }

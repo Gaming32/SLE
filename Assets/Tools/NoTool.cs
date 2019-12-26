@@ -14,4 +14,5 @@ public class NoTool : ITool
     }
     public void Use(Transform player) { }
     public void SwitchMode(int oldMode, int newMode) { }
+    public void Update() { }
 }
